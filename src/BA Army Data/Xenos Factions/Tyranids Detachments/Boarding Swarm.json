@@ -1,0 +1,337 @@
+{
+  "detachmentName": "Boarding Swarm",
+  "armyRules": [
+    {
+      "name": "Shadow in the Warp",
+      "phase": "Any Command",
+      "abilityText": "If your Army Faction is TYRANIDS, once per battle, in either player’s Command phase, if one or more units from your army with this ability are on the battlefield, you can unleash the Shadow in the Warp. When you do, each enemy unit on the battlefield must take a Battle-shock test. Each time an enemy unit takes such a Battle-shock test, if it is within 6\" of one or more SYNAPSE units from your army, subtract 1 from that test."
+    },
+    {
+      "name": "Synapse",
+      "phase": "Passive",
+      "abilityText": "If your Army Faction is TYRANIDS, while a TYRANIDS unit from your army is within 6\" of one or more friendly SYNAPSE models, that TYRANIDS unit is said to be within Synapse Range of that model and of your army. Walls and closed Hatchways are ignored for measuring purposes. While a TYRANIDS unit from your army is within Synapse Range of your army:\nEach time that unit takes a Battle-shock test, take that test on 3D6 instead of 2D6.\nEach time a model in that unit makes a melee attack, add 1 to the Strength characteristic of that attack."
+    }
+  ],
+  "detachmentRules": [
+    {
+      "name": "Priority Predation",
+      "phase": "Enemy Movement",
+      "abilityText": "Each time an enemy unit within Engagement Range of one or more TYRANIDS units from your army is selected to Fall Back, after that enemy unit has made that Fall Back move, for each of those TYRANIDS units, if there are no other enemy units within Engagement Range of it, it can make a Normal move of up to 3\""
+    }
+  ],
+  "enhancable": false,
+  "enhancements": [
+    {
+      "name": "Monoform Predators",
+      "phase": "Passive",
+      "abilityText": "TYRANIDS models in this Detachment cannot be given Enhancements"
+    }
+  ],
+  "stratagems": [
+    {
+      "name": "Lithe Killers",
+      "commandPointCost": 1,
+      "stratagemType": "Battle Tactic",
+      "phase": "Any Fight",
+      "abilityText": "WHEN: Fight phase, just after an enemy unit has selected its targets.\nTARGET: One TYRANIDS unit from your army that was selected as the target of one or more of the attacking unit's attacks.\nEFFECT: Until the end of the phase, models in your unit have a 5+ invulnerable save."
+    },
+    {
+      "name": "Adrenalised Slaughter",
+      "commandPointCost": 1,
+      "stratagemType": "Strategic Ploy",
+      "phase": "Any Fight",
+      "abilityText": "WHEN: Fight phase, just after an enemy unit has selected its targets.\nTARGET One TYRANIDS unit from your army that was selected as the target of one or more of the attacking unit's attacks.\nEFFECT: Until the end of the phase, each time a model in your unit is destroyed, if that model has not fought this phase, roll one D6. On a 5+, do not remove that destroyed model from play; it can fight after the attacking unit has finished making its attacks, and is then removed from play."
+    },
+    {
+      "name": "Talon-Tip Swarm",
+      "commandPointCost": 1,
+      "stratagemType": "Strategic Ploy",
+      "phase": "Any Fight",
+      "abilityText": "WHEN: Fight phase, just after a TYRANIDS unit from your army destroys an enemy unit.\nTARGET: That TYRANIDS unit.\nEFFECT: If your unit is not within Engagement Range of one or more enemy units, it can make a Normal move of up to 3\". After that move, if your unit is within range of an objective marker and no enemy units are within range of that objective marker, that objective marker is Secured by your army."
+    },
+    {
+      "name": "Predatory Pounce",
+      "commandPointCost": 1,
+      "stratagemType": "Strategic Ploy",
+      "phase": "Enemy Movement",
+      "abilityText": "WHEN: Your opponent's Movement phase, just after an enemy unit opens a hatchway.\nTARGET: One TYRANIDS unit from your army that is within 3\" of that Hatchway and is not within Engagement Range of one or more enemy units.\nEFFECT: Your unit can make a Pounce move. To do so, your unit can me moved up to 3\", but must end that move as close as possible to that hatchway. When doing so, those models can be moved within Engagement Range of that enemy unit, but only that enemy unit."
+    }
+  ],
+  "unitBracket1": {
+    "maxUnitNumber": 2,
+    "duplicatesAllowed": false,
+    "units": [
+      {
+        "name": "Deathleaper",
+        "warlordable": false,
+        "stats": {
+          "M": "8\"",
+          "T": "6",
+          "Sv": "3+",
+          "invulnSave": "4+",
+          "W": "7",
+          "Ld": "7+",
+          "OC": "1"
+        },
+        "keywords": ["INFANTRY", "CHARACTER", "EPIC HERO", "GREAT DEVOURER", "VANGUARD INVADER", "DEATHLEAPER"],
+        "abilities": {
+          "core": ["Fights First", "Infiltrators", "Lone Operative", "Stealth"],
+          "faction": ["Synapse"],
+          "datasheet": [
+            {
+              "name": "Feeder Tendrils",
+              "abilityText": "Each time this model destroys an enemy CHARACTER model, you gain 1CP."
+            },
+            {
+              "name": "Fear of the Unseen (Aura)",
+              "abilityText": "While an enemy unit is within 6\" of this model, worsen the Leadership characteristic of models in that unit by 1. In addition, in the Battle-shock step of your opponent’s Command phase, if such an enemy unit is below its Starting Strength, it must take a Battle-shock test."
+            }
+          ],
+          "composition": [
+            {
+              "name": "Hunter Organism",
+              "abilityText": "This model cannot be your WARLORD"
+            }
+          ]
+        },
+        "unitComposition": "1 Deathleaper - EPIC HERO",
+        "pointsCost": 80,
+        "defaultLoadout": ["Lictor claws and talons"],
+        "weaponProfiles": [
+          {
+            "meleeWeapons": [
+              {
+                "name": "Lictor claws and talons",
+                "weaponAbilities": ["PRECISION"],
+                "stats": {
+                  "range": "Melee",
+                  "A": "6",
+                  "WS": "2+",
+                  "S": "7",
+                  "AP": "-2",
+                  "D": "2"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Lictor",
+        "warlordable": true,
+        "stats": {
+          "M": "8\"",
+          "T": "6",
+          "Sv": "4+",
+          "W": "6",
+          "Ld": "7+",
+          "OC": "1"
+        },
+        "keywords": ["INFANTRY", "GREAT DEVOURER", "VANGUARD INVADER", "LICTOR"],
+        "abilities": {
+          "core": ["Fights First", "Infiltrators", "Lone Operative", "Stealth"],
+          "faction": ["Synapse"],
+          "datasheet": [
+            {
+              "name": "Feeder Tendrils",
+              "abilityText": "Each time this model destroys an enemy CHARACTER model, you gain 1CP."
+            }
+          ]
+        },
+        "unitComposition": "1 Lictor",
+        "pointsCost": 55,
+        "defaultLoadout": ["Lictor claws and talons"],
+        "weaponProfiles": [
+          {
+            "meleeWeapons": [
+              {
+                "name": "Lictor claws and talons",
+                "weaponAbilities": ["PRECISION"],
+                "stats": {
+                  "range": "Melee",
+                  "A": "6",
+                  "WS": "2+",
+                  "S": "7",
+                  "AP": "-2",
+                  "D": "2"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Neurolictor",
+        "warlordable": true,
+        "stats": {
+          "M": "8\"",
+          "T": "5",
+          "Sv": "4+",
+          "invulnSave": "4+",
+          "W": "7",
+          "Ld": "7+",
+          "OC": "1"
+        },
+        "keywords": ["INFANTRY", "GREAT DEVOURER", "VANGUARD INVADER", "SYNAPSE", "NEUROLICTOR"],
+        "abilities": {
+          "core": ["Infiltrators", "Lone Operative", "Stealth"],
+          "faction": ["Shadow in the Warp", "Synapse"],
+          "datasheet": [
+            {
+              "name": "Feeder Tendrils",
+              "abilityText": "Each time this model destroys an enemy CHARACTER model, you gain 1CP."
+            },
+            {
+              "name": "Neural Disruption",
+              "abilityText": "In your Command phase, select one enemy unit within 12\" of this model. That unit must take a Battle-shock test."
+            },
+            {
+              "name": "Psychological Saboteur (Aura)",
+              "abilityText": "While an enemy unit is within 12\" of this model, if that unit is Battle-shocked:\nEach time a model in that unit makes an attack, subtract 1 from the Hit roll.\nEach time a friendly TYRANIDS model makes an attack that targets that unit, add 1 to the Wound roll."
+            }
+          ]
+        },
+        "unitComposition": "1 Neurolictor",
+        "pointsCost": 90,
+        "defaultLoadout": ["Piercing claws and talons"],
+        "weaponProfiles": [
+          {
+            "meleeWeapons": [
+              {
+                "name": "Piercing claws and talons",
+                "weaponAbilities": ["PRECISION"],
+                "stats": {
+                  "range": "Melee",
+                  "A": "6",
+                  "WS": "2+",
+                  "S": "6",
+                  "AP": "-2",
+                  "D": "1"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "unitBracket2": {
+    "maxUnitNumber": 2,
+    "duplicatesAllowed": true,
+    "units": [
+      {
+        "name": "Hormagaunts",
+        "warlordable": true,
+        "stats": {
+          "M": "10\"",
+          "T": "3",
+          "Sv": "5+",
+          "W": "1",
+          "Ld": "8+",
+          "OC": "2"
+        },
+        "keywords": ["INFANTRY", "BATTLELINE", "GREAT DEVOURER", "ENDLESS MULTITUDE", "HORMAGAUNTS"],
+        "abilities": {
+          "faction": ["Synapse"],
+          "datasheet": [
+            {
+              "name": "Bounding Leap",
+              "abilityText": "This unit is eligible to declare a charge in a turn in which it Advanced."
+            }
+          ],
+          "composition": [
+            {
+              "name": "Rules Adaptation",
+              "abilityText": "HORMAGAUNTS units cannot perform the Secure Site Tactical Manoeuvre."
+            }
+          ]
+        },
+        "unitComposition": "10 Hormagaunts",
+        "pointsCost": 65,
+        "defaultLoadout": ["Hormagaunt talons"],
+        "weaponProfiles": [
+          {
+            "meleeWeapons": [
+              {
+                "name": "Hormagaunt talons",
+                "stats": {
+                  "range": "Melee",
+                  "A": "3",
+                  "WS": "4+",
+                  "S": "3",
+                  "AP": "-1",
+                  "D": "1"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Raveners",
+        "warlordable": true,
+        "stats": {
+          "M": "10\"",
+          "T": "5",
+          "Sv": "5+",
+          "W": "3",
+          "Ld": "8+",
+          "OC": "1"
+        },
+        "keywords": ["INFANTRY", "GREAT DEVOURER", "VANGUARD INVADER", "RAVENERS"],
+        "abilities": {
+          "core": ["Deep Strike"],
+          "faction": ["Synapse"]
+        },
+        "unitComposition": "3 Raveners",
+        "pointsCost": 75,
+        "defaultLoadout": ["Thoracic bio-weapon", "Ravener claws and talons"],
+        "unitOptions": [
+          {
+            "rangedWeapons": [
+              {
+                "name": "Thoracic bio-weapon",
+                "weaponAbilities": ["ASSAULT"],
+                "stats": {
+                  "range": "12\"",
+                  "A": "3",
+                  "BS": "4+",
+                  "S": "4",
+                  "AP": "0",
+                  "D": "1"
+                }
+              }
+            ]
+          },
+          {
+            "meleeWeapons": [
+              {
+                "name": "Ravener claws and talons",
+                "weaponAbilities": ["TWIN-LINKED"],
+                "stats": {
+                  "range": "Melee",
+                  "A": "7",
+                  "WS": "3+",
+                  "S": "5",
+                  "AP": "-1",
+                  "D": "1"
+                }
+              }
+            ]
+          },
+          {
+            "nonweaponGear":[
+              {
+                "name": "Armoured Thorax",
+                "abilityText": "The bearer has a Save characteristic of 4+"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Von Ryan's Leapers"
+      }
+    ]
+  }
+}
